@@ -1,0 +1,55 @@
+header>h1 {
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+}
+
+/* Display style */
+.container-item{
+    width: 100%;
+    border: 1px solid;
+    padding: 24px;
+}
+
+.container-item>h2{
+    text-align: center;
+}
+
+.container-result, .container-form {
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.container-form {
+    text-align: left;
+    background-color: aliceblue;
+}
+
+.container-form>div {
+    padding: 8px;
+}
+
+.form-item {
+    height: 24px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: blanchedalmond;
+}
+
+button {
+    height: 32px;
+    border: 0%;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: lightgreen;
+    border-radius: 8px;
+}
+
+.calculate-button {
+    background-color: coral;
+    color: white;
+}
