@@ -2,6 +2,7 @@
 <head>
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 
@@ -20,7 +21,7 @@
                 </section>
         
                 <!-- Input Section -->
-                <section class="container-form">
+                <form class="container-form" id="bmiForm">
                     <div>
                         <label>Jenis Kelamin</label> <br/>
                         <input type="radio" name="gender" id="gender-man">
@@ -30,21 +31,22 @@
                     </div>
                     <div>
                         <label>Berat Badan (kg)</label> <br/>
-                        <input type="number" name="requirements" id="weight">
+                        <input type="number" name="requirements" id="weight" required>
                     </div>
                     <div>
                         <label>Usia (th)</label> <br/>
-                        <input type="number" name="requirements" id="age">
+                        <input type="number" name="requirements" id="age" required>
                     </div>
                     <div>
                         <label>Tinggi Badan (cm)</label> <br/>
-                        <input type="number" name="requirements" id="height">
+                        <input type="number" name="requirements" id="height" required>
                     </div>
                     <div style="padding-top: 15px;">
-                        <button type="button">Hitung BMI</button>
-                        <button type="button" class="reset-button">Reset</button>
+                        <button type="submit">Hitung BMI</button>
+                        <button type="button" id="reset-button" 
+                        class="reset-button">Reset</button>
                     </div>
-                </section>
+                </form>
 
                 <!-- Fitur Text-->
                 <section>
@@ -70,11 +72,14 @@
             <div class="container-item">
                 <h2 style="text-align: left;">Hasil</h2>
                 <section class="container-result">
-                    <h4>Berat Badan Lebih</h4>
-                    <h1>0</h1>
-                    <h4>Anda memiliki Berat Badan Berlebih</h4>
-                    <button type="button">Download Hasil BMI</button>
+                    <h4 id="interpert-header"></h4>
+                    <h1 id="result-bmi">0</h1>
+                    <h4 id="interpert-detail"></h4>
+                    <button type="button" id="downloadBtn">Download Hasil BMI</button>
                 </section>
+
+                <img src="assets/gplay.png" id="downloadBtnGplay" height="50px" width="100px">
+                <img src="assets/appstore.png" id="downloadBtnAppStore" height="50px" width="100px">
             </div>
         </div>
     </main>

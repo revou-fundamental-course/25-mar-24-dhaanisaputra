@@ -52,6 +52,10 @@ button {
     color: white;
 }
 
+button:hover {
+    background-color: grey;
+}
+
 .calculate-button {
     background-color: rgb(140, 211, 211);
     color: white;
@@ -62,6 +66,11 @@ button {
     color: black;
     border-radius: 8px;
     border: 1px solid black;
+    margin-left: 10px;
+}
+
+.reset-button:hover {
+    background-color: rgb(255, 35, 35);
 }
 
 ol {
