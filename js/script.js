@@ -5,11 +5,12 @@ var dwnloadbutton = document.getElementById('downloadBtn');
 var consultBtn = document.getElementById('consultation')
 var registBtn = document.getElementById('registration')
 
-
+// alert function
 function downloadBtn () {
     alert('Feature Not Available')
 }
 
+// submit button event listener
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     var height = document.getElementById('height').value;
