@@ -4,6 +4,8 @@ var resetButton = document.getElementById('reset-button');
 var dwnloadbutton = document.getElementById('downloadBtn');
 var bannerGplay = document.getElementById('downloadBtnGplay')
 var bannerAppstore = document.getElementById('downloadBtnAppStore')
+var consultBtn = document.getElementById('consultation')
+var registBtn = document.getElementById('registration')
 
 
 function downloadBtn () {
@@ -62,3 +64,5 @@ resetButton.onclick = function () {
 dwnloadbutton.onclick = downloadBtn;
 bannerGplay.onclick = downloadBtn;
 bannerAppstore.onclick = downloadBtn;
+consultBtn.onclick = downloadBtn;
+registBtn.onclick = downloadBtn;
