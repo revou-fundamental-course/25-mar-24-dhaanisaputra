@@ -126,3 +126,9 @@ sup {
     justify-content: center;
     gap: 8px;
 }
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
